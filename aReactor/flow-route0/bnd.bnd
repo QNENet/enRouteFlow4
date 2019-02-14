@@ -1,0 +1,7 @@
+
+Bundle-Name: ${project.name}
+Bundle-Version: ${project.version}
+Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
+Export-Package: net.qnenet.qne.flow.route0
+Import-Package: *
+Vaadin-OSGi-Extender: true
