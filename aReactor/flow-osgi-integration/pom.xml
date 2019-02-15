@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-    <artifactId>aReactor</artifactId>
-    <groupId>net.qnenet</groupId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.qnenet.qne</groupId>
-    <artifactId>flow-osgi-integration</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+	<parent>
+		<artifactId>aReactor</artifactId>
+		<groupId>net.qnenet</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
 
-    <description>The flow-osgi-integration DS component - built using OSGi enRoute R7</description>
+	<groupId>net.qnenet.qne</groupId>
+	<artifactId>flow-osgi-integration</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.osgi.enroute</groupId>
-            <artifactId>osgi-api</artifactId>
-            <type>pom</type>
-        </dependency>
-        <dependency>
-            <groupId>org.osgi.enroute</groupId>
-            <artifactId>test-bundles</artifactId>
-            <type>pom</type>
-        </dependency>
-        <dependency>
-        	<groupId>com.vaadin</groupId>
-        	<artifactId>flow-server</artifactId>
-        	<version>1.2.4</version>
-        </dependency>
-    </dependencies>
+	<description>The flow-osgi-integration DS component - built using OSGi enRoute R7</description>
 
-    <build>
-        <plugins>
-            <!-- Expected to inherit configuration from a parent enRoute 
-                pom. This includes -contract definitions and maven-jar-plugin setup -->
-            <plugin>
-                <groupId>biz.aQute.bnd</groupId>
-                <artifactId>bnd-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>osgi-api</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>test-bundles</artifactId>
+			<type>pom</type>
+		</dependency>
+ 		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>flow-server</artifactId>
+			<version>1.2.4</version>
+		</dependency> 
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Expected to inherit configuration from a parent enRoute pom. This 
+				includes -contract definitions and maven-jar-plugin setup -->
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>

@@ -244,7 +244,8 @@ Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
     </build>
     <modules>
     	<module>flow-route0</module>
-    <module>flow-route1</module>
+    
     <module>flowAPP</module>
-  </modules>
+    <module>flow-osgi-integration</module>
+    </modules>
 </project>
